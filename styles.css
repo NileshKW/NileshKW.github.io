@@ -155,8 +155,9 @@ main {
   }
 
   nav {
-    grid-template-columns: repeat(3, max-content);
-    gap: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.2rem;
   }
 
   .nav-link::before {

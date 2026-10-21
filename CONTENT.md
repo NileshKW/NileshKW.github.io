@@ -5,6 +5,9 @@ Each navigation tab is backed by one file in `content/`:
 - `content/me.md`
 - `content/thoughts.md`
 - `content/blog.md`
+- `content/math.md`
+- `content/programming.md`
+- `content/music.md`
 
 Edit the appropriate file and refresh the site. The site renders GitHub-flavoured Markdown, including headings, lists, tables, task lists, links, blockquotes, fenced code blocks, and images.
 
