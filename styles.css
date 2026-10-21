@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "AcPlus IBM VGA 8x16";
+  src: url("assets/fonts/AcPlus_IBM_VGA_8x16.ttf") format("truetype");
+  font-display: block;
+}
+
+:root {
+  color: #d8d8d8;
+  background: #000;
+  font-family: "AcPlus IBM VGA 8x16", monospace;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  background: #000;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 13rem;
+  padding: 2rem;
+}
+
+nav {
+  display: grid;
+  justify-items: start;
+  gap: 0.9rem;
+}
+
+.nav-link {
+  color: #d8d8d8;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  outline: none;
+}
+
+.nav-link::before {
+  content: "> ";
+  visibility: hidden;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: #fff;
+}
+
+.nav-link.is-active {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link:hover::before,
+.nav-link:focus-visible::before,
+.nav-link.is-active::before {
+  visibility: visible;
+}
+
+.nav-link:focus-visible {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+  margin-left: 13rem;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.section-content {
+  max-width: 38rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d8d8d8;
+  color: #d8d8d8;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.section-content > :first-child {
+  margin-top: 0;
+}
+
+.section-content > :last-child {
+  margin-bottom: 0;
+}
+
+.section-content :is(h1, h2, h3, h4, h5, h6) {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.section-content a {
+  color: #fff;
+}
+
+.section-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.section-content pre {
+  overflow-x: auto;
+  padding: 0.75rem;
+  border: 1px solid #d8d8d8;
+}
+
+.section-content code {
+  font-family: inherit;
+}
+
+.section-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.section-content :is(th, td) {
+  padding: 0.35rem;
+  border: 1px solid #d8d8d8;
+  text-align: left;
+}
+
+.content-error {
+  color: #ff8a8a;
+}
+
+@media (max-width: 34rem) {
+  body {
+    overflow: auto;
+  }
+
+  .sidebar {
+    position: static;
+    width: auto;
+    padding: 1.5rem;
+  }
+
+  nav {
+    grid-template-columns: repeat(3, max-content);
+    gap: 1.2rem;
+  }
+
+  .nav-link::before {
+    content: "";
+  }
+
+  main {
+    min-height: 0;
+    margin-left: 0;
+    padding: 0 1.5rem 1.5rem;
+  }
+}
