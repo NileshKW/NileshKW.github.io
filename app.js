@@ -35,5 +35,6 @@ function selectSection() {
   main.id = activeName;
 }
 
+selectSection();
 Promise.all([...sections].map(loadContent)).then(selectSection);
 window.addEventListener("hashchange", selectSection);

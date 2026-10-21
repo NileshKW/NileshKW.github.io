@@ -1,0 +1,10 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Workspace / Environment artifacts
+.agents/
+.aws/
+.codex/
+outputs/
+work/
