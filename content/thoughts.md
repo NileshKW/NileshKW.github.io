@@ -1,7 +1,5 @@
 # Thoughts
 
-Write your thoughts here using Markdown.
 
-- Add a list
-- Use **bold** or _italics_
-- Include an image: `![Description](assets/your-image.png)`
+# 22-10-26
+Just starting this website wonder if I'll actually maintain it. Though I'd like to ofcourse.
